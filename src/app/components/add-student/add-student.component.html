@@ -1,0 +1,21 @@
+
+<h2>Add Student</h2>
+<form>
+  <div>
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="newStudent.name" name="name">
+  </div>
+  <div>
+    <label>Age:</label>
+    <input type="number" [(ngModel)]="newStudent.age" name="age">
+  </div>
+  <div>
+    <label>Grade:</label>
+    <input type="text" [(ngModel)]="newStudent.grade" name="grade">
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="newStudent.email" name="email">
+  </div>
+  <button (click)="addStudent()">Add</button>
+</form>
